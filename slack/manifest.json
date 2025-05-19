@@ -9,20 +9,30 @@
         "bot_user": {
             "display_name": "FlatboxBot",
             "always_online": false
-        }
+        },
+        "slash_commands": [
+            {
+                "command": "/create-issues",
+                "description": "Create GitHub issues from pasted JSON",
+                "usage_hint": "[Paste a JSON array]",
+                "should_escape": false
+            }
+        ]
     },
     "oauth_config": {
         "scopes": {
             "bot": [
-                "commands",
+                "app_mentions:read",
+                "channels:history",
                 "chat:write",
                 "chat:write.public",
-                "channels:history",
-                "app_mentions:read",
+                "commands",
                 "files:read",
-                "mpim:read",
                 "im:history",
-                "mpim:history"
+                "mpim:history",
+                "mpim:read",
+                "im:write.topic",
+                "mpim:write"
             ]
         }
     },

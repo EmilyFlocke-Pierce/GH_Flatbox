@@ -71,6 +71,21 @@ See [`HOW-To_project-board_GH_Flatbox.md`](HOW-To_project-board_GH_Flatbox.md) f
 
 **Note:** All credentials must be provided securely via environment variables—never hardcoded or in plaintext files.
 
+## Example Environment Variables
+
+Set the following environment variables in your shell or secrets manager before running the app:
+
+```sh
+# Example: set these in your shell or CI/CD environment
+export SLACK_BOT_TOKEN=your-slack-bot-token
+export SLACK_APP_TOKEN=your-slack-app-level-token
+export GITHUB_TOKEN=your-github-personal-access-token
+```
+
+**Important:**  
+- **Never** commit secrets or `.env` files to your repository.  
+- Inject these variables securely at runtime (via your shell, Docker, or a secrets manager).
+
 ---
 
 ## Slack App Permissions
@@ -90,4 +105,13 @@ Make sure to follow security best practices and never commit secrets.
 ## License
 
 This project is licensed under the terms of the [LICENSE](LICENSE) file.
+
+## Acknowledgments
+
+- This project was developed with the assistance of ChatGPT-4o. The name "FlatBox" was suggested by ChatGPT-4o after a voice-to-text mishearing during development.
+
+## Image Credits
+
+Image: "Reusable shipping box by rhinopaq" by rhinopaq is licensed under CC BY-SA 4.0 (Creative Commons Attribution-Share Alike 4.0 International)  
+Source: https://commons.wikimedia.org/wiki/File:Reusable_shipping_box_by_rhinopaq.jpg
 
