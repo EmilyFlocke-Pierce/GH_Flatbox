@@ -1,7 +1,3 @@
-Thank you for the extra context! Here’s a professional, clear README draft for your project, tailored for LLM/automation users and developers. This version highlights the Slack-to-GitHub workflow, the JSON format, and setup/configuration notes. You can further customize it as needed.
-
----
-
 # GH_Flatbox
 
 **GH_Flatbox** is a Slack-to-GitHub connector designed for teams and LLM workflows. It lets you generate structured GitHub issues and project board entries directly from Slack, using JSON templates—no context switching, no manual copy-paste.
@@ -95,6 +91,3 @@ Make sure to follow security best practices and never commit secrets.
 
 This project is licensed under the terms of the [LICENSE](LICENSE) file.
 
----
-
-Let me know if you want to add usage screenshots, a FAQ, or more technical details!
